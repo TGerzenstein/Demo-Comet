@@ -1,0 +1,160 @@
+* {
+  padding: 0.00rem;
+  margin: 0.00rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.navbar-toggler {
+  border: none; 
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.brand {
+  font-size: 1.62rem;
+  font-weight: 900;
+  letter-spacing: -0.06rem; 
+}
+
+.text-prim {
+  color:#044cf8;
+}
+
+h1 {
+  letter-spacing: -0.12rem; 
+  font-size: 2.80rem;
+  font-weight: 600;
+  padding-right: 4rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.subtitle {
+  font-size: 1.60rem;
+  font-weight: 600;
+  color: #272729;
+  padding-right: 6rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  line-height: 1.2;
+}
+
+.text {
+  color: #959595;
+}
+
+.title-col {
+  font-size: 1.30rem;
+  letter-spacing: -0.06rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.custom-col {
+  max-width: 16.25rem; 
+  width: 100%; 
+  margin-right: 1rem;
+}
+
+.column-1 {
+  padding-right: 1rem;
+}
+
+.img-front {
+  border-radius: 1.75rem;
+  height: 44rem;
+  margin-top: 2rem;
+}
+
+button {
+  background-color: #ffffff;
+  padding-left: 0rem;
+}
+
+button:hover {
+  border: none;
+}
+
+.border-button {
+  position: relative; 
+}
+
+.border-button::after {
+  content: ''; 
+  position: absolute; 
+  left: 0; 
+  bottom: -0.31rem; 
+  width: 25%; 
+  height: 0.12rem; 
+  background-color: black; 
+}
+
+/* Media query celulares */
+@media (max-width: 36.00rem) {
+
+  header {
+    padding: 0rem;
+  }
+
+  .navbar {
+    margin: 0.00rem auto;
+  }
+  
+  .bi {
+    font-size: 1.00rem;
+  }
+
+  .text-primary {
+    font-size: 0.88rem; 
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  .subtitle {
+    font-size: 0.88rem;
+  }
+
+  .subtitle .text {
+    font-size: 0.81rem;
+  }
+
+  .title-col {
+    font-size: 1.00rem;
+  }
+
+  .btn {
+    font-size: 0.75rem; 
+  }
+
+  .img-front {
+    width: 100%; 
+    height: auto;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .img-front {
+    display: none;
+  }
+}
